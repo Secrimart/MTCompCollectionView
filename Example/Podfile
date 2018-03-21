@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTCompCollectionView_Example' do
+  pod 'MTCompCollectionView', :path => '../'
+
+  target 'MTCompCollectionView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
