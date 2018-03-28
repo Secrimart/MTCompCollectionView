@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		966EA56A206A2E5B003D6267 /* MTOtherCompVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EA568206A2E5B003D6267 /* MTOtherCompVC.m */; };
 		A38F0A2BBF6719109EBA54A2 /* Pods_MTCompCollectionView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F18E5BF59FEE5D0C342E1E /* Pods_MTCompCollectionView_Example.framework */; };
 		EDA9FA8A60664DC7697304E5 /* Pods_MTCompCollectionView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0837019DA25E8535CF534298 /* Pods_MTCompCollectionView_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -39,8 +40,8 @@
 /* Begin PBXFileReference section */
 		04F18E5BF59FEE5D0C342E1E /* Pods_MTCompCollectionView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCompCollectionView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0837019DA25E8535CF534298 /* Pods_MTCompCollectionView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCompCollectionView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C29D59637717EA4C20F2184 /* MTCompCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MTCompCollectionView.podspec; path = ../MTCompCollectionView.podspec; sourceTree = "<group>"; };
-		57AE966FA801E3F1B1CAFEE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2C29D59637717EA4C20F2184 /* MTCompCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTCompCollectionView.podspec; path = ../MTCompCollectionView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		57AE966FA801E3F1B1CAFEE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MTCompCollectionView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCompCollectionView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +65,10 @@
 		75E347AD008E1D6181AFF1EB /* Pods-MTCompCollectionView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCompCollectionView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTCompCollectionView_Tests/Pods-MTCompCollectionView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D493DE0598618EF52A6AEC0 /* Pods-MTCompCollectionView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCompCollectionView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTCompCollectionView_Tests/Pods-MTCompCollectionView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		966EA568206A2E5B003D6267 /* MTOtherCompVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTOtherCompVC.m; sourceTree = "<group>"; };
+		966EA569206A2E5B003D6267 /* MTOtherCompVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTOtherCompVC.h; sourceTree = "<group>"; };
 		BE706FF219BCAC7B33A15FEA /* Pods-MTCompCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCompCollectionView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTCompCollectionView_Example/Pods-MTCompCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D14FA43EA4A097CBCB237CE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D14FA43EA4A097CBCB237CE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D475326486EB432D5273A84A /* Pods-MTCompCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCompCollectionView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTCompCollectionView_Example/Pods-MTCompCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +146,8 @@
 		6003F593195388D20070C39A /* Example for MTCompCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				966EA569206A2E5B003D6267 /* MTOtherCompVC.h */,
+				966EA568206A2E5B003D6267 /* MTOtherCompVC.m */,
 				6003F59C195388D20070C39A /* MTAppDelegate.h */,
 				6003F59D195388D20070C39A /* MTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -370,11 +375,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MTCompCollectionView_Example/Pods-MTCompCollectionView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BackButtonHandler/BackButtonHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/JLFramework/JLFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/JRSwizzle/JRSwizzle.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MTBaseObjects/MTBaseObjects.framework",
 				"${BUILT_PRODUCTS_DIR}/MTCompCollectionView/MTCompCollectionView.framework",
+				"${BUILT_PRODUCTS_DIR}/MTComponent/MTComponent.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BackButtonHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JRSwizzle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTBaseObjects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTCompCollectionView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTComponent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -404,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* MTAppDelegate.m in Sources */,
+				966EA56A206A2E5B003D6267 /* MTOtherCompVC.m in Sources */,
 				6003F5A7195388D20070C39A /* MTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

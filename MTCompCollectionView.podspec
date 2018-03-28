@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MTCompCollectionView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MTCompCollectionView.'
+  s.summary          = 'A functional collection domain component built on MTComponent.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A functional collection domain component that implements MTComponentProtocol and requires MTTComContainerVC for component integration.
                        DESC
 
-  s.homepage         = 'https://github.com/rstx_reg@aliyun.com/MTCompCollectionView'
+  s.homepage         = 'https://github.com/Secrimart/MTCompCollectionView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'rstx_reg@aliyun.com' => 'secrimart@aliyun.com' }
-  s.source           = { :git => 'https://github.com/rstx_reg@aliyun.com/MTCompCollectionView.git', :tag => s.version.to_s }
+  s.author           = { 'Secrimart' => 'secrimart@aliyun.com' }
+  s.source           = { :git => 'https://github.com/Secrimart/MTCompCollectionView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MTComponent', '~> 0.1'
+  s.dependency 'SDWebImage', '~> 4.3'
 end
