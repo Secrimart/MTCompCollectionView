@@ -47,8 +47,8 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
     return CGSizeMake(width, ceilf(height));
 }
 
-- (void)registerCollectionViewCell {
-    [self.collectionView registerClass:[MTBaseCollectionViewCell class] forCellWithReuseIdentifier:MTCompCollectionViewVCCellIdentifier];
+- (void)registerCollectionViewCell:(UICollectionView *)collectionView {
+    [collectionView registerClass:[MTBaseCollectionViewCell class] forCellWithReuseIdentifier:MTCompCollectionViewVCCellIdentifier];
 }
 
 - (void)componentDidChangedServiceData {
@@ -70,7 +70,7 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self registerCollectionViewCell];
+    [self registerCollectionViewCell:self.collectionView];
     
     [self.view addSubview:self.collectionView];
     
@@ -142,7 +142,6 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
     }
     
     cell.title = [self.viewModel itemTitleAtIndexPath:indexPath];
-    cell.backgroundColor = [UIColor greenColor];
     
     return cell;
 }

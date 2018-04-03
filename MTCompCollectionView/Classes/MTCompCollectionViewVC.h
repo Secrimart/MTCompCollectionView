@@ -23,6 +23,12 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /**
  注册UICollectionViewCell，子类可重写
  */
-- (void)registerCollectionViewCell;
+
+/**
+ 注册UICollectionViewCell，子类可重写
+
+ @param collectionView UICollectionView 对象
+ */
+- (void)registerCollectionViewCell:(UICollectionView *)collectionView;
 
 @end
