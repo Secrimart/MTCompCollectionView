@@ -10,6 +10,8 @@
 
 @import MTComponent;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MTCompCollectionViewVC : UIViewController<MTComponentProtocol, UICollectionViewDelegate,
 UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -22,13 +24,10 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 /**
  注册UICollectionViewCell，子类可重写
- */
 
-/**
- 注册UICollectionViewCell，子类可重写
-
- @param collectionView UICollectionView 对象
+ @param cellClass Cell的类对象
  */
-- (void)registerCollectionViewCell:(UICollectionView *)collectionView;
+- (void)registerCollectionViewCellClass:(nullable Class)cellClass;
 
 @end
+NS_ASSUME_NONNULL_END
