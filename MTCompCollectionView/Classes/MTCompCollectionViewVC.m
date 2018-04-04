@@ -47,8 +47,8 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
     return CGSizeMake(width, ceilf(height));
 }
 
-- (void)registerCollectionViewCellClass:(Class)cellClass {
-    [self.collectionView registerClass:cellClass forCellWithReuseIdentifier:MTCompCollectionViewVCCellIdentifier];
+- (Class)registerCollectionViewCellClass {
+    return [self.collectionView class];
 }
 
 - (void)componentDidChangedServiceData {
@@ -70,9 +70,8 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self registerCollectionViewCellClass:[self.collectionView class]];
-    
     [self.view addSubview:self.collectionView];
+    [self.collectionView registerClass:[self registerCollectionViewCellClass] forCellWithReuseIdentifier:MTCompCollectionViewVCCellIdentifier];
     
 }
 

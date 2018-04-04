@@ -25,9 +25,9 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /**
  注册UICollectionViewCell，子类可重写
 
- @param cellClass Cell的类对象
+ @return Cell的类对象
  */
-- (void)registerCollectionViewCellClass:(nullable Class)cellClass;
+- (nullable Class)registerCollectionViewCellClass;
 
 @end
 NS_ASSUME_NONNULL_END
