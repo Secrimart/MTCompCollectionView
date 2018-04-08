@@ -12,6 +12,8 @@
 
 @import SDWebImage;
 
+@import JLFramework;
+
 static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVCCellIdentifier";
 
 @import MTBaseObjects;
@@ -48,7 +50,7 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
 }
 
 - (Class)registerCollectionViewCellClass {
-    return [self.collectionView class];
+    return [MTBaseCollectionViewCell class];
 }
 
 - (void)componentDidChangedServiceData {
@@ -156,6 +158,10 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
         [self.navigationController pushViewController:vc animated:YES];
     } else {
         NSURLRequest * request = [[self.viewModel collectionItemAtIndexPath:indexPath] requestPageLandingURl];
+        if (!request) {
+            [self showComingSoon];
+            return;
+        }
         NSAssert(request, @"No more info to landing view controller.");
         
         MTWebViewController *webVC = [[MTWebViewController alloc] init];
