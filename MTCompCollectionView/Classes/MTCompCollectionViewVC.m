@@ -155,6 +155,7 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
     UIViewController *vc = [item instanceLandingVC];
     
     if (vc && item.isNativeLanding) {
+        vc.title = item.itemTitle;
         [self.navigationController pushViewController:vc animated:YES];
     } else {
         NSURLRequest * request = [[self.viewModel collectionItemAtIndexPath:indexPath] requestPageLandingURl];
@@ -165,6 +166,7 @@ static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVC
         NSAssert(request, @"No more info to landing view controller.");
         
         MTWebViewController *webVC = [[MTWebViewController alloc] init];
+        webVC.title = item.itemTitle;
         [webVC toLoadRequest:request];
         [self.navigationController pushViewController:webVC animated:YES];
     }
