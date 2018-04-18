@@ -6,7 +6,7 @@
 //
 
 #import "MTCompCollectionViewLayout.h"
-@import JLFramework;
+@import MTFramework;
 
 @implementation MTCompCollectionViewLayout
 

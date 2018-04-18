@@ -12,7 +12,7 @@
 
 @import SDWebImage;
 
-@import JLFramework;
+@import MTFramework;
 
 static NSString *MTCompCollectionViewVCCellIdentifier = @"MTCompCollectionViewVCCellIdentifier";
 
